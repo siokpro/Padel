@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liga de Padel</title>
+    <link rel="stylesheet" href="padel.css" />
+  </head>
+  <body>
+    <div class="baner">
+      <h1>Liga De Padel</h1>
+    </div>
+
+    <div class="clasificacion" id="tabla-clasificacion">
+      <table>
+        <thead>
+          <tr>
+            <th>Posición</th>
+            <th>Nombre</th>
+            <th>PJ</th>
+            <th>PG</th>
+            <th>PP</th>
+            <th>Puntos</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-body">
+          <!-- Aquí se agregarán las filas automáticamente -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="interfaz">
+      <h2>Ingresa los datos del partido</h2>
+      
+      <label class="datos" for="nombre1">Ganador 1:</label>
+      <select id="nombre1">
+        <option value="Sergio">Sergio</option>
+        <option value="Alex">Alex</option>
+        <option value="Pablo">Pablo</option>
+        <option value="Daniel">Daniel</option>
+        <option value="Ivan">Ivan</option>
+        <option value="Adrian">Adrian</option>
+      </select>
+      <br />
+      <label class="datos" for="nombre2">Ganador 2:</label>
+      <select id="nombre2">
+        <option value="Sergio">Sergio</option>
+        <option value="Alex">Alex</option>
+        <option value="Pablo">Pablo</option>
+        <option value="Daniel">Daniel</option>
+        <option value="Ivan">Ivan</option>
+        <option value="Adrian">Adrian</option>
+      </select>
+      <br />
+      <label class="datos" for="rival1">Perdedor 1:</label>
+      <select id="rival1">
+        <option value="Sergio">Sergio</option>
+        <option value="Alex">Alex</option>
+        <option value="Pablo">Pablo</option>
+        <option value="Daniel">Daniel</option>
+        <option value="Ivan">Ivan</option>
+        <option value="Adrian">Adrian</option>
+      </select>
+      <br />
+      <label class="datos" for="rival2">Perdedor 2:</label>
+      <select id="rival2">
+        <option value="Sergio">Sergio</option>
+        <option value="Alex">Alex</option>
+        <option value="Pablo">Pablo</option>
+        <option value="Daniel">Daniel</option>
+        <option value="Ivan">Ivan</option>
+        <option value="Adrian">Adrian</option>
+      </select>
+      <br />
+      <button onclick="guardarDatos()">Enviar</button>
+      <br />
+      <div id="datosGuardados">
+        <!-- Aquí se mostrarán los datos guardados -->
+      </div>
+    </div>
+    <script src="padel.js"></script>
+  </body>
+</html>
